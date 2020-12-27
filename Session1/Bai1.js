@@ -5,7 +5,7 @@ function adjacentElementsProduct(inputArray = []) {
     if(count > max) {
       max = count;
     }
-   
+  
   }
   return max;
 }

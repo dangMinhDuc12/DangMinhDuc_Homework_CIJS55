@@ -16,3 +16,15 @@ function findOddNumberWithoutLoop(inputArray = []) {
 
 }
 console.log(findOddNumberWithoutLoop([3,6,-2,-5,7,3,8,10,11]));
+
+function mapNumber(inputArray = []) {
+  return inputArray.map(value => value * 2);
+}
+console.log(mapNumber([3,6,-2,-5,7,3,8,10,11]));
+function reduceNumber(inputArray = []) {
+  return inputArray.reduce((acc,value) => {
+    acc.push(value*2);
+    return acc;
+  }, [])
+}
+console.log(reduceNumber([3,6,-2,-5,7,3,8,10,11]));
