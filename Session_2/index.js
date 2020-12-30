@@ -98,5 +98,5 @@ town1.getFamily('Số nhà 1');
 town1.getFamily('Số nhà 2');
 
 //Lấy thông tin tất cả các nhà
-town1.getFamily('');
+town1.getFamily();
 
