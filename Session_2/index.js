@@ -1,3 +1,7 @@
+import './person-info.js'
+const app = document.querySelector('#app');
+
+
 class Person {
   constructor(name, age, job, id) {
   this.name = name;
@@ -46,6 +50,9 @@ class Town {
             Số chứng minh nhân dân: ${person.id}
           
           `);
+
+          app.innerHTML += `<person-info name = '${person.name}' age = '${person.age}' job = '${person.job}' id = '${person.id}' img = 'https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg'></person-info>`
+
         })
 
       }
@@ -64,6 +71,9 @@ class Town {
             Số chứng minh nhân dân: ${person.id}
           
           `);
+          app.innerHTML += `<person-info name = '${person.name}' age = '${person.age}' job = '${person.job}' id = '${person.id}' img = 'https://img.nhandan.com.vn/Files/Images/2020/07/26/nhat_cay-1595747664059.jpg'></person-info>`
+
+
         })
 
       
@@ -95,8 +105,8 @@ const town1 = new Town('Town 1',family1, family2);
 town1.getFamily('Số nhà 1');
 
 //Lấy thông tin số nhà 2
-town1.getFamily('Số nhà 2');
+// town1.getFamily('Số nhà 2');
 
 //Lấy thông tin tất cả các nhà
-town1.getFamily();
+// town1.getFamily();
 
