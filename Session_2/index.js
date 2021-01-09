@@ -7,7 +7,7 @@ class Person {
   this.name = name;
   this.age = age;
   this.job = job;
-  this.id = id;
+this.id = id;
   }
 }
 
@@ -102,11 +102,11 @@ const family2 = new Family('Số nhà 2', person3, person4);
 const town1 = new Town('Town 1',family1, family2);
 
 //Lấy thông tin số nhà 1
-town1.getFamily('Số nhà 1');
+// town1.getFamily('Số nhà 1');
 
 //Lấy thông tin số nhà 2
 // town1.getFamily('Số nhà 2');
 
 //Lấy thông tin tất cả các nhà
-// town1.getFamily();
+town1.getFamily();
 
